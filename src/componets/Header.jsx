@@ -1,7 +1,14 @@
 import { FaPhoneAlt, FaEnvelope, FaClock } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import Modal from "./Modal";
+import Login from "./Login";
+import Signup from "./Signup";
 
 export default function Header() {
+  const [showLogin, setShowLogin] = useState(false);
+  const [showSignup, setShowSignup] = useState(false);
+
   return (
     <header className="w-full">
       {/* Topbar */}
@@ -24,9 +31,18 @@ export default function Header() {
 
         {/* Right Auth Links */}
         <div className="flex items-center space-x-3 text-sm">
-          <a href="#" className="hover:underline">
-            Sign in / Register
-          </a>
+          <button
+            onClick={() => setShowLogin(true)}
+            className="hover:underline"
+          >
+            Sign in /
+          </button>
+             <button
+            onClick={() => setShowSignup(true)}
+            className="hover:underline"
+          >
+           Register
+          </button>
           <a href="#" className="hover:underline">
             Your Cart (0)
           </a>
@@ -53,6 +69,12 @@ export default function Header() {
           >{`Category >>`}</Link>
         </nav>
       </div>
+      <Modal isOpen={showLogin} onClose={() => setShowLogin(false)}>
+        <Login />
+      </Modal>
+       <Modal isOpen={showSignup} onClose={() => setShowSignup(false)}>
+        <Signup />
+      </Modal>
     </header>
   );
 }
