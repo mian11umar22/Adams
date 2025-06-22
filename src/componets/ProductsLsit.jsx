@@ -3,7 +3,7 @@ import { Product } from "../Data/ProductList";
 export default function ProductList() {
   return (
     <div className="w-full px-4 py-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-10">
         {Product.map((product, index) => (
           <div
             key={index}
