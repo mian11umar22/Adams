@@ -1,7 +1,7 @@
 export default function HeaderBanner() {
   return (
     <div className="bg-[url('/images/slider-bg.jpg')] bg-cover bg-center min-h-[400px] flex flex-col md:flex-row items-center justify-center px-4 md:px-12 py-8 space-y-6 md:space-y-0">
-      {/* Left: Ring Image */}
+    
       <div className="flex-shrink-0">
         <img
           src="/images/slider-content-img.jpg"
@@ -10,7 +10,7 @@ export default function HeaderBanner() {
         />
       </div>
 
-      {/* Right: Text Section */}
+    
       <div className="md:ml-10 text-center md:text-left text-gray-800 space-y-3 max-w-md">
         <h2 className="text-2xl md:text-3xl font-bold inline-block px-4 py-2 bg-sky-400 text-white">
           RINGS ON SALE

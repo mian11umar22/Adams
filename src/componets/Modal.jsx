@@ -10,7 +10,7 @@ export default function Modal({ isOpen, onClose, children }) {
         className="bg-white rounded-lg shadow-lg w-full max-w-4xl relative 
                    animate-fadeIn p-6"
       >
-        {/* Close Button */}
+        
         <button
           onClick={onClose}
           className="absolute top-2 right-3 text-gray-600 hover:text-black text-xl"

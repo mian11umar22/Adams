@@ -11,9 +11,9 @@ export default function Header() {
 
   return (
     <header className="w-full">
-      {/* Topbar */}
+      
       <div className="bg-sky-400 text-white text-sm py-2 px-4 md:px-6 flex flex-col md:flex-row justify-between items-start md:items-center space-y-2 md:space-y-0">
-        {/* Left Contact Info */}
+   
         <div className="flex flex-wrap items-center gap-4">
           <div className="flex items-center space-x-1">
             <FaPhoneAlt />
@@ -29,7 +29,7 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Right Auth Links */}
+      
         <div className="flex items-center space-x-3 text-sm">
           <button
             onClick={() => setShowLogin(true)}
@@ -37,11 +37,11 @@ export default function Header() {
           >
             Sign in /
           </button>
-             <button
+          <button
             onClick={() => setShowSignup(true)}
             className="hover:underline"
           >
-           Register
+            Register
           </button>
           <a href="#" className="hover:underline">
             Your Cart (0)
@@ -72,7 +72,7 @@ export default function Header() {
       <Modal isOpen={showLogin} onClose={() => setShowLogin(false)}>
         <Login />
       </Modal>
-       <Modal isOpen={showSignup} onClose={() => setShowSignup(false)}>
+      <Modal isOpen={showSignup} onClose={() => setShowSignup(false)}>
         <Signup />
       </Modal>
     </header>

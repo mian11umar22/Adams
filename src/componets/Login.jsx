@@ -1,7 +1,7 @@
 export default function Login() {
   return (
     <div className="w-full max-w-3xl flex rounded-lg overflow-hidden">
-      {/* Left Side - Welcome Panel */}
+       
       <div className="hidden md:flex flex-col justify-center  bg-gray-200 px-8 py-10 w-1/2">
         <h2 className="text-2xl font-bold mb-2">
           Welcome Back to <span>ADAMAS</span>
@@ -12,7 +12,7 @@ export default function Login() {
         </p>
       </div>
 
-      {/* Right Side - Form */}
+    
       <div className="w-full md:w-1/2 bg-white px-6 py-8">
         <h3 className="text-xl text-center text-sky-500 font-bold mb-6">
           Login
